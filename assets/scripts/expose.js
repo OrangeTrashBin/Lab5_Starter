@@ -15,7 +15,7 @@ function init() {
 
   button.addEventListener("click", playAudio);
 
-  volContrl.addEventListener("change", updateImageVol);
+  volContrl.addEventListener("input", updateImageVol);
 
   function updateImageVol() {
     audio.volume = (volContrl.value) / 100;
